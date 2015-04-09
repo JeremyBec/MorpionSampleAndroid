@@ -1,0 +1,116 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/grille"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitStart"
+        android:nestedScrollingEnabled="true" />
+
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText1"
+                android:text="Morpion"
+                android:layout_span="3"
+                android:layout_gravity="center"/>
+
+        </TableRow>
+        <TableRow>
+
+            <ImageButton
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:id="@+id/case1"
+                android:focusableInTouchMode="false"
+                android:background="@drawable/croix"
+                android:onClick="caseTouched" />
+
+            <ImageButton
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/case2"
+                android:background="@drawable/croix"/>
+
+            <ImageButton
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/case3"
+                android:background="@drawable/croix"/>
+
+        </TableRow>
+        <TableRow>
+
+            <ImageButton
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:id="@+id/case4"
+                android:background="@drawable/croix"/>
+
+            <ImageButton
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/case5"
+                android:background="@drawable/croix"/>
+
+            <ImageButton
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/case6"
+                android:background="@drawable/croix"/>
+
+        </TableRow>
+        <TableRow>
+
+            <ImageButton
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:id="@+id/case7"
+                android:background="@drawable/croix"/>
+
+            <ImageButton
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/case8"
+                android:background="@drawable/croix"/>
+
+            <ImageButton
+                android:layout_width="102dp"
+                android:layout_height="102dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/case9"
+                android:background="@drawable/croix"/>
+
+        </TableRow>
+
+
+
+    </TableLayout>
+</FrameLayout>

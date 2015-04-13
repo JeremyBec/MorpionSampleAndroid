@@ -45,7 +45,8 @@
                 android:layout_height="102dp"
                 android:id="@+id/case1"
                 android:focusableInTouchMode="false"
-                android:background="@drawable/croix"
+                android:tag="0"
+                android:background="@drawable/blank"
                 android:onClick="caseTouched" />
 
             <ImageButton
@@ -53,14 +54,18 @@
                 android:layout_height="102dp"
                 android:layout_marginLeft="10dp"
                 android:id="@+id/case2"
-                android:background="@drawable/croix"/>
+                android:tag="1"
+                android:background="@drawable/blank"
+                android:onClick="caseTouched" />
 
             <ImageButton
                 android:layout_width="102dp"
                 android:layout_height="102dp"
                 android:layout_marginLeft="10dp"
                 android:id="@+id/case3"
-                android:background="@drawable/croix"/>
+                android:tag="2"
+                android:background="@drawable/blank"
+                android:onClick="caseTouched"/>
 
         </TableRow>
         <TableRow>
@@ -69,21 +74,27 @@
                 android:layout_width="102dp"
                 android:layout_height="102dp"
                 android:id="@+id/case4"
-                android:background="@drawable/croix"/>
+                android:tag="3"
+                android:background="@drawable/blank"
+                android:onClick="caseTouched"/>
 
             <ImageButton
                 android:layout_width="102dp"
                 android:layout_height="102dp"
                 android:layout_marginLeft="10dp"
                 android:id="@+id/case5"
-                android:background="@drawable/croix"/>
+                android:tag="4"
+                android:background="@drawable/blank"
+                android:onClick="caseTouched"/>
 
             <ImageButton
                 android:layout_width="102dp"
                 android:layout_height="102dp"
                 android:layout_marginLeft="10dp"
                 android:id="@+id/case6"
-                android:background="@drawable/croix"/>
+                android:tag="5"
+                android:background="@drawable/blank"
+                android:onClick="caseTouched"/>
 
         </TableRow>
         <TableRow>
@@ -92,24 +103,71 @@
                 android:layout_width="102dp"
                 android:layout_height="102dp"
                 android:id="@+id/case7"
-                android:background="@drawable/croix"/>
+                android:tag="6"
+                android:background="@drawable/blank"
+                android:onClick="caseTouched"/>
 
             <ImageButton
                 android:layout_width="102dp"
                 android:layout_height="102dp"
                 android:layout_marginLeft="10dp"
                 android:id="@+id/case8"
-                android:background="@drawable/croix"/>
+                android:tag="7"
+                android:background="@drawable/blank"
+                android:onClick="caseTouched"/>
 
             <ImageButton
                 android:layout_width="102dp"
                 android:layout_height="102dp"
                 android:layout_marginLeft="10dp"
                 android:id="@+id/case9"
-                android:background="@drawable/croix"/>
+                android:tag="8"
+                android:background="@drawable/blank"
+                android:onClick="caseTouched"/>
 
         </TableRow>
 
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"></TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Button"
+                android:id="@+id/buttonRestart"
+                android:layout_column="1"
+                android:clickable="true"
+                android:onClick="restartJeu" />
+        </TableRow>
 
 
     </TableLayout>
